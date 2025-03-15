@@ -7,14 +7,14 @@
 1. Dockerをインストール
 2. VsCodeをインストール
 3. VsCodeの拡張機能にDevContainersをインストール
-4. プロジェクトルート直下と.devcontainerディレクトリ内に.envを作成
+4. ソースをクローン
+5. プロジェクトルート直下と.devcontainerディレクトリ内に.envを作成
 
 ```bash
 cp .env.sample .env
 cp .devcontainer/.env.sample .env
 ```
 
-5. ソースをクローン<br>
 6. Ctrl Shift Pでコマンドパレットを開く<br>
 7. DevContainer:Reopen in Containerを押下
 
