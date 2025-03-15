@@ -23,7 +23,7 @@ cp .devcontainer/.env.sample .env
 ## 使用技術
 
 バックエンド: Laravel 12系<br>
-フロントエンド: React 19
+フロントエンド: React 19、Type Script 5.8
 
 ## 開発環境
 
