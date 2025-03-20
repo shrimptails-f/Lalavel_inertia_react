@@ -37,3 +37,9 @@ PHPCsFixer<br>
 PHP Intelephense<br>
 Prettier
 ESLint
+
+## デバッガ
+
+バックエンド:Xdebug
+
+フロント:[こちら](https://zenn.dev/chida/articles/a12f72ed8153b0)を参照
