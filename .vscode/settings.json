@@ -43,8 +43,6 @@
     "php-cs-fixer.onsave": true,
     "php-cs-fixer.rules": "@PSR12",
     "php-cs-fixer.config": ".php-cs-fixer.php",
-    "phpcbf.executablePath": "${workspaceFolder}/vendor/bin/phpcbf",
-    "phpcbf.standard": "PSR12",
     "intelephense.diagnostics.enable": true, // 静的解析を有効化
     "intelephense.diagnostics.undefinedConstants": true, // 未定義の定数を警告
     "intelephense.diagnostics.undefinedFunctions": true, // 未定義の関数を警告
@@ -126,6 +124,7 @@
         "inertia",
         "vite",
         "inertiajs",
-        "Intelephense"
+        "Intelephense",
+        "Assertable",
     ] // タイポの除外単語設定
 }
