@@ -5,11 +5,14 @@ services:
     build: ./container/php
     container_name: app
     restart: always
+    ports:
+      - 9003:9003
     volumes:
       - ../:/var/www/html
     working_dir: /var/www/html
     environment:
       COMPOSER_ALLOW_SUPERUSER: 1
+      TZ: Asia/Tokyo
     depends_on:
       - db
 
