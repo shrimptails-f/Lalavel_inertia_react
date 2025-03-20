@@ -1,4 +1,3 @@
-
 {
     "compilerOptions": {
         "target": "ESNext",
@@ -12,6 +11,9 @@
         "forceConsistentCasingInFileNames": true,
         "types": ["vite/client"],
         "baseUrl": "./",
+        "paths": {
+          "@/*": ["resources/js/*"]
+        }
     },
     "include": ["resources/js/**/*"],
     "exclude": ["node_modules"]

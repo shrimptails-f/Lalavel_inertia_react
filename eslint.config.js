@@ -31,6 +31,10 @@ export default [
             },
             'import/resolver': {
                 typescript: {}, // TypeScript のパス解決をサポート
+                alias: {
+                    map: [['@/layouts/*', './resources/js/layouts']],
+                    extensions: ['.js', '.jsx', '.ts', '.tsx'],
+                },
             },
         },
         rules: {
