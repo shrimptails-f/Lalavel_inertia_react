@@ -1,7 +1,7 @@
 import { createRoot } from 'react-dom/client';
 import { createInertiaApp } from '@inertiajs/react';
 import { resolvePageComponent } from 'laravel-vite-plugin/inertia-helpers';
-import Layout from '/var/www/html/resources/js/layouts/layout';
+import Layout from '@/layouts/layout';
 
 createInertiaApp({
     resolve: async (name) => {
