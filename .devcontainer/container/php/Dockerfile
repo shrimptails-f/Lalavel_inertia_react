@@ -25,6 +25,10 @@ RUN apt-get update && apt-get install -y \
 # Composer をインストール
 COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 
+# Xdebug インストール
+RUN pecl install xdebug-3.4.2 && docker-php-ext-enable xdebug
+COPY ./php.ini /usr/local/etc/php/conf.d/99-custom.ini
+
 # Node.js & npm のみを PHP イメージにコピー
 COPY --from=node_builder /usr/local/bin/node /usr/local/bin/node
 COPY --from=node_builder /usr/local/bin/npm /usr/local/bin/npm
