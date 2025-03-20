@@ -1,18 +1,6 @@
 version: '3.8'
 
 services:
-  web:
-    build: ./container/apache
-    container_name: web
-    restart: always
-    ports:
-      - ${WEB_PORT}:80
-    volumes:
-      - ../:/var/www/html
-      - ./container/apache/httpd.conf:/usr/local/apache2/conf/httpd.conf
-    depends_on:
-      - app
-
   app:
     build: ./container/php
     container_name: app
