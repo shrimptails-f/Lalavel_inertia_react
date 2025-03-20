@@ -43,3 +43,9 @@ ESLint
 バックエンド:Xdebug
 
 フロント:[こちら](https://zenn.dev/chida/articles/a12f72ed8153b0)を参照
+
+## テスト方法
+1.テストコマンドを実行
+```bsash
+php artisan test
+```
